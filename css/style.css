@@ -1,3 +1,304 @@
+header .filter_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+header .filter_header input {
+  border: none;
+  border-bottom: 1px solid #a200ff;
+}
+header button.btn {
+  background: rgba(208, 1, 208, 0.5333333333);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+  padding: 6px;
+  margin-bottom: 5px;
+}
+header button.btn:hover {
+  background: #a200ff;
+  background-size: 1500%;
+  border-radius: 15px;
+  transition: -1s;
+}
 
+section .content_category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(100deg, rgba(50, 168, 232, 0.5921568627), rgba(124, 21, 202, 0.5568627451), rgba(208, 1, 208, 0.5333333333));
+  padding: 3px;
+  margin: 3px;
+}
+section .category_content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+section .category_content img {
+  margin: 3px;
+  border-radius: 30px;
+}
+section .category_content a {
+  font-size: 12pt;
+  text-decoration: none;
+  color: #040157;
+  padding: 3px;
+  text-align: center;
+}
+section .category_content a:hover {
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  background-size: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+section .container_ofertas h1 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+section .container_ofertas .content_ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: space-around;
+  padding: 5px;
+  margin: 5px;
+}
+section .container_ofertas .content_ofertas:hover {
+  box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.75);
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.75);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.75);
+  border-radius: 50px;
+}
+section .container_ofertas .content_ofertas img {
+  object-fit: contain;
+  border-radius: 10px;
+  width: 50%;
+}
+section .container_ofertas .content_ofertas li {
+  list-style: none;
+  color: #666;
+  font-size: 13pt;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  justify-content: flex-start;
+}
+section .container_ofertas .content_ofertas .bxl-bitcoin {
+  color: #F58634;
+  font-size: 16pt;
+}
+section .container_ofertas .content_ofertas .bxs-dollar-circle {
+  color: green;
+  font-size: 16pt;
+}
+section .container_ofertas .content_ofertas .bxs-check-circle {
+  color: #014457;
+}
+
+section .content_promo {
+  padding: 10px;
+}
+section .content_promo h1 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+section .content_promo .container_img_promo img {
+  object-fit: cover;
+  border-radius: 200px;
+  box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.75);
+  -webkit-box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.75);
+  -moz-box-shadow: 10px 10px 49px 0px rgba(117, 57, 210, 0.7490196078);
+  width: 100%;
+}
+section .content_promo .container_img_promo img:hover {
+  animation: imgAnim_promo 5s linear 0s 4 normal forwards;
+}
+@keyframes imgAnim_promo {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+section .title_publicar {
+  margin-top: 3vh;
+  animation: AnimContentPublic 10s linear 0s 4 normal forwards;
+}
+@keyframes AnimContentPublic {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+section .title_publicar h2 {
+  text-align: center;
+  color: #7a08e4;
+  font-size: 20pt;
+  padding-top: 5px;
+}
+section .title_publicar h4 {
+  text-align: center;
+  color: #942ff3;
+  padding-top: 5px;
+}
+section .info_publicar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+section .info_publicar .content_publicar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+
+footer .container_brand_footer img {
+  width: auto;
+  height: 9vh;
+  object-fit: cover;
+  float: left;
+}
+footer .btn_footer {
+  margin-top: 25px;
+}
+footer .btn_footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .btn_footer ul li {
+  list-style: none;
+}
+footer .btn_footer ul a {
+  text-decoration: none;
+  font-size: 11pt;
+  border-radius: 100px;
+  padding: 3px;
+  color: #040157;
+}
+footer .btn_footer ul a:hover {
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  background-size: 100%;
+  transition: 1s;
+  color: white;
+}
+footer .container_btn_rs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+}
+footer .container_btn_rs li {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 2px;
+  border-bottom: 1px solid;
+  cursor: grab;
+}
+footer .container_btn_rs a {
+  text-decoration: none;
+  color: #1a2b9c;
+}
+footer .creditos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: small;
+}
+
+.bxl-whatsapp {
+  color: green;
+}
+
+.bxl-instagram {
+  color: #a31777;
+}
+
+.bxl-telegram {
+  color: #32a8e8;
+}
+
+.bxl-twitter {
+  color: #03a2f7;
+}
+
+.bx-envelope {
+  color: #666;
+}
+
+.bxl-bitcoin {
+  color: #F58634;
+  font-size: 16pt;
+}
+
+.bxs-dollar-circle {
+  color: green;
+  font-size: 16pt;
+}
+
+.bxs-check-circle {
+  color: #014457;
+}
 
 /*# sourceMappingURL=style.css.map */
