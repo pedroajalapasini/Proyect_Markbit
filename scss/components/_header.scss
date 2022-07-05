@@ -1,4 +1,35 @@
+/* Header de todas las paginas*/
+
 header {
+    font-family: 'Nunito Sans', sans-serif;
+
+    .nav-item {
+        padding: 5px;
+        display: flex;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        .nav-link {
+            color: #040157;
+            padding: 5px;
+            border-radius: 20px;
+
+            &:hover {
+                border: none;
+                background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+                background-size: 100%;
+                color: white;
+                font-weight: bold;
+                transition: 1s;
+            }
+        }
+    }
+
     .filter_header {
         display: flex;
         flex-wrap: wrap;
@@ -29,4 +60,3 @@ header {
         }
     }
 }
-
