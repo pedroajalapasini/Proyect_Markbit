@@ -23,23 +23,10 @@
 
 
 
-.contenedor_productos-desktop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
 
-    .filter_productos-desktop {
-        width: 50%;
-        margin-top: 5px;
-        background-color: aquamarine;
+.filter_productos-desktop {
 
-        @media only screen and (max-width: 600px) {
-            display: none;
-        }
-
-    }
-    .container_producto{
-        width: 50%;
+    @media only screen and (max-width: 600px) {
+        display: none;
     }
 }
