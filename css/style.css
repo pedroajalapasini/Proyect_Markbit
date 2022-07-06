@@ -42,6 +42,9 @@ header button.btn {
   background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
   color: white;
 }
+header button.btn:hover {
+  color: white;
+}
 
 /* Section_One-INDEX */
 .carrusel_index .carousel {
@@ -461,6 +464,22 @@ footer .creditos {
 }
 
 /* variables*/
+header {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+section {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+footer {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* COMERCIO */
 .filter_comercio {
   margin: 5px;
