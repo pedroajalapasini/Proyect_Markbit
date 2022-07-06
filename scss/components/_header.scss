@@ -43,18 +43,10 @@ header {
     }
 
     button.btn {
-        background: #d001d088;
-        border: none;
-        letter-spacing: 0.05em;
-        border-radius: 10px;
-        padding: 6px;
-        margin-bottom: 5px;
-
-        &:hover {
-            background: #a200ff;
-            background-size: 1500%;
-            border-radius: 15px;
-            transition: -1s;
-        }
+        padding: 5px;
+        margin: 5px;
+        border-radius: 20px;
+        background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+        color: white;
     }
 }

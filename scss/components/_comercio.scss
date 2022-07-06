@@ -37,13 +37,33 @@
 
     .btn_filter_mobile{
         padding: 5px;
-        margin: 1px;
+        margin: 5px;
         border-radius: 20px;
         background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
         color: white;
     }
 
+    .btn_filter-canvas {
+        padding: 8px;
+        margin: 5px;
+        border-radius: 20px;
+        background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
+
+    .btn_filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+
+    }
+
+}
 
 .container_market {
     display: grid;
@@ -67,6 +87,7 @@
         margin: 4px;
         position: relative;
         opacity: 1;
+
 
         .img_market {
             opacity: 1;
@@ -128,7 +149,7 @@
             }
         }
 
-        strong {
+        h5 {
             font-weight: 900;
         }
 
