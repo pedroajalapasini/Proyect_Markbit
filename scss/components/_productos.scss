@@ -21,20 +21,25 @@
     }
 }
 
-.filter_productos-desktop {
-    @media only screen and (max-width: 600px) {
-        display: none;
-    }
-}
 
-.section_productos {
+
+.contenedor_productos-desktop {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    align-content: center;
 
-    .container_producto {
-        width: 200px;
+    .filter_productos-desktop {
+        width: 50%;
+        margin-top: 5px;
+        background-color: aquamarine;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
+
+    }
+    .container_producto{
+        width: 50%;
     }
 }
