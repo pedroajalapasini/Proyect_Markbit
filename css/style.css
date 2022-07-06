@@ -42,6 +42,9 @@ header button.btn {
   background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
   color: white;
 }
+header button.btn:hover {
+  color: white;
+}
 
 /* Section_One-INDEX */
 .carrusel_index .carousel {
@@ -460,7 +463,31 @@ footer .creditos {
   font-size: 20pt;
 }
 
+.bx-slider {
+  color: white;
+  font-size: 20pt;
+}
+
 /* variables*/
+body header {
+  font-family: "Nunito Sans", sans-serif;
+}
+body .container_filter_mobile {
+  font-family: "Nunito Sans", sans-serif;
+}
+body .filter_productos-desktop {
+  font-family: "Nunito Sans", sans-serif;
+}
+body section {
+  font-family: "Nunito Sans", sans-serif;
+}
+body main {
+  font-family: "Nunito Sans", sans-serif;
+}
+body footer {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* COMERCIO */
 .filter_comercio {
   margin: 5px;
@@ -497,7 +524,6 @@ footer .creditos {
   margin: 5px;
   border-radius: 20px;
   background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
-  color: white;
 }
 .container_filter_mobile .btn_filter-canvas {
   padding: 8px;
@@ -604,6 +630,33 @@ footer .creditos {
 }
 .container_market .content_market .dropdown-menu li span {
   font-weight: 500;
+}
+
+/* PRODUCTOS */
+.header_canvas {
+  background-color: rgba(151, 22, 249, 0.2431372549);
+}
+.header_canvas h5 {
+  font-weight: 900;
+  font-size: 15pt;
+}
+
+.offcanvas-body h6 {
+  font-size: 13pt;
+  font-weight: 900;
+}
+.offcanvas-body .input_filter {
+  width: 100%;
+  height: 80%;
+}
+.offcanvas-body .sc_checkbox {
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter_productos-desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
