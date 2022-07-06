@@ -1,5 +1,5 @@
 footer {
-    margin-top: 15px;
+    margin-top: 2px;
 
     .footerResponsive {
         flex-wrap: wrap;
@@ -8,7 +8,7 @@ footer {
         align-items: center;
         align-content: center;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 720px) {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -22,7 +22,7 @@ footer {
         object-fit: cover;
         width: 100%;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 650px) {
             width: 80%;
             margin-top: 5px;
         }
@@ -38,12 +38,13 @@ footer {
         justify-content: space-evenly;
 
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 650px) {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            align-content: center;
         }
 
         li {
