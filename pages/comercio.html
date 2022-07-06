@@ -64,7 +64,7 @@
         <!-- Start_Filter -->
         <div class="filter_header d-flex">
             <ul class="nav">
-                <div class="container">
+                <div class=" container-fluid filter_comercio">
                     <form class="d-inline-block" role="search">
                         <input class="form-control me-2 d-inline-block" type="search" placeholder="¿Qué andas buscando?"
                             aria-label="Search">
@@ -80,72 +80,199 @@
                         <option value="1">Inmuebles</option>
                         <option value="2">Vehículos</option>
                         <option value="3">Productos</option>
-                        <option value="3">Moda</option>
+                        <option value="4">Moda</option>
                         <option value="3">Mineria</option>
-                        <option value="3">NFTs</option>
+                        <option value="5">NFTs</option>
                     </select>
                     <button class="btn btn-outline-success d-inline-block" type="submit">Buscar</button>
+                </div>
             </ul>
         </div>
         <!-- End_Filter_Header -->
+        <!-- Filter_Header-MOBILE -->
+        <div class="container_filter_mobile fixed-bottom">
+            <button class="btn_filter_mobile d-block d-sm-block d-md-none d-lg-none position-absolute bottom-0 end-0 " type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions">Filtro</button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Buscar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                        <h4>Palabra clava</h4>
+                        <form class="d-inline-block" role="search">
+                            <input class="form-control me-2 d-inline-block" type="search"
+                                placeholder="¿Qué andas buscando?" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                        <h4>Ciudad</h4>
+                        <select name="selector_donde" class="input_filter form-control">
+                            <option selected>¿Donde?</option>
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Cordoba</option>
+                            <option value="3">San Martin de los Andes</option>
+                        </select>
+                    </div>
+                    <div class="p-2 bg-light shadow p-3 mb-3 bg-body rounded">
+                        <h3 class="">Categorías</h3>
+                        <select name="selector_category" class="input_filter form-control">
+                            <option selected>Todas las categorias</option>
+                            <option value="1">Inmuebles</option>
+                            <option value="2">Vehículos</option>
+                            <option value="3">Productos</option>
+                            <option value="4">Moda</option>
+                            <option value="3">Mineria</option>
+                            <option value="5">NFTs</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- End_Filter_Header-MOBILE -->
     </header>
     <!-- Start_Content_Comercio -->
-    <main class="container">
+    <main class="container-fluid">
         <div class="container_market">
             <div class="content_market">
-                <img src="../multimedia/comercio_uno.png" alt="">
-                <h3>Glow MultiMarcas</h3>
-                <h5>CABA</h5>
-                <ul>
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">50 ventas</li>
-                </ul>
+                <div class="img_market">
+                    <img src="../multimedia/comercio_uno.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>Glow MultiMarcas</strong>
+                    <span><i class='bx bx-map'></i>CABA</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="market_vermas">
+                    <li><a href="./productos.html">Ver más</a></li>
+                </div>
             </div>
             <div class="content_market">
-                <img src="../multimedia/comercio_dos.png" alt="">
-                <h3>Alfa Inmuebles</h3>
-                <h5>CABA</h5>
-                <ul>
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">25 ventas</li>
-                </ul>
+                <div class="img_market">
+                    <img src="../multimedia/comercio_dos.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>Alfa Inmuebles</strong>
+                    <span><i class='bx bx-map'></i>CABA</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="market_vermas">
+                    <li><a href="./productos.html">Ver más</a></li>
+                </div>
             </div>
             <div class="content_market">
-                <img src="../multimedia/comercio_tres.png" alt="">
-                <h3>ETH.Info</h3>
-                <h5>Cordoba</h5>
-                <ul>
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">55 ventas</li>
-                </ul>
+                <div class="img_market">
+                    <img src="../multimedia/comercio_tres.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>ETH.Info</strong>
+                    <span><i class='bx bx-map'></i>Cordoba</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="market_vermas">
+                    <li><a href="./productos.html">Ver más</a></li>
+                </div>
             </div>
             <div class="content_market">
-                <img src="../multimedia/comercio_cuatro.png" alt="">
-                <h3>Hornet Car</h3>
-                <h5>CABA</h5>
-                <ul>
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">12 ventas</li>
-                </ul>
-            </div>
-            <div class="content_market">
-                <img src="../multimedia/comercio_cinco.png" alt="">
-                <h3>AlieNFT</h3>
-                <h5>San Martin de los Andes</h5>
-                <ul>
+                <div class="img_market">
+                    <img src="../multimedia/comercio_cuatro.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>Hornet Car</strong>
+                    <span><i class='bx bx-map'></i>CABA</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="market_vermas">
+                    <li><a href="./productos.html">Ver más</a></li>
 
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">60 ventas</li>
-                </ul>
+                </div>
             </div>
             <div class="content_market">
-                <img src="../multimedia/comercio_seis.png" alt="">
-                <h3>MineBit</h3>
-                <h5>San Martin de los Andes</h5>
-                <ul>
-                    <li class="ver_mas"><a href="./productos.html">Ver más</a></li>
-                    <li class="cantidad_ventas">35 ventas</li>
-                </ul>
+                <div class="img_market">
+                    <img src="../multimedia/comercio_cinco.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>AlieNFT</strong>
+                    <span><i class='bx bx-map'></i>San Martin de los Andes</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                    <div class="market_vermas">
+                        <li><a href="./productos.html">Ver más</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="content_market">
+                <div class="img_market">
+                    <img src="../multimedia/comercio_seis.png" alt="">
+                </div>
+                <div class="info_market">
+                    <strong>MineBit</strong>
+                    <span><i class='bx bx-map'></i>San Martin de los Andes</span>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-atom'></i>Redes
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><i class='bx bx-coin-stack'></i><span>BTC</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>BEP-20</span></li>
+                            <li><i class='bx bx-coin-stack'></i><span>TRC-20</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="market_vermas">
+                    <li><a href="./productos.html">Ver más</a></li>
+                </div>
             </div>
         </div>
     </main>

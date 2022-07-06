@@ -1,7 +1,4 @@
 /* Header de todas las paginas*/
-header {
-  font-family: "Nunito Sans", sans-serif;
-}
 header .nav-item {
   padding: 5px;
   display: flex;
@@ -319,7 +316,7 @@ section .info_publicar .content_publicar {
 }
 
 footer {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 footer .footerResponsive {
   flex-wrap: wrap;
@@ -328,7 +325,7 @@ footer .footerResponsive {
   align-items: center;
   align-content: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 720px) {
   footer .footerResponsive {
     display: flex;
     flex-direction: row;
@@ -342,7 +339,7 @@ footer .container_brand_footer img {
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   footer .container_brand_footer img {
     width: 80%;
     margin-top: 5px;
@@ -357,13 +354,14 @@ footer .btn_footer {
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
   footer .btn_footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
 footer .btn_footer li {
@@ -449,6 +447,145 @@ footer .creditos {
   color: #014457;
 }
 
+.bx-map {
+  color: red;
+}
+
+.bx-atom {
+  color: #006faa;
+  font-size: 12pt;
+}
+
+.bx-coin-stack {
+  color: rgb(60, 0, 255);
+}
+
 /* variables*/
+.filter_comercio {
+  margin: 5px;
+}
+@media only screen and (min-width: 620px) {
+  .filter_comercio {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .filter_comercio {
+    display: none;
+  }
+}
+.filter_comercio form input {
+  width: 25vh;
+}
+.filter_comercio select {
+  margin: 3px;
+  border: none;
+  border-bottom: 1px solid #a200ff;
+}
+.filter_comercio button {
+  margin: 5px;
+}
+
+.container_filter_mobile .btn_filter_mobile {
+  padding: 5px;
+  margin: 1px;
+  border-radius: 20px;
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  color: white;
+}
+
+.container_market {
+  display: grid;
+  grid-template-rows: repeat(3, 260px);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container_market {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.container_market .content_market {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  border-radius: 50px;
+  border: none;
+  margin: 4px;
+  position: relative;
+  opacity: 1;
+}
+.container_market .content_market .img_market {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.container_market .content_market .img_market:hover {
+  opacity: 0.25;
+}
+.container_market .content_market .info_market {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container_market .content_market .market_vermas {
+  text-align: center;
+  transition: 0.2s;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+}
+.container_market .content_market .market_vermas:hover {
+  opacity: 1;
+}
+.container_market .content_market .market_vermas li {
+  list-style: none;
+  padding: 5px;
+  margin: 1px;
+  border-radius: 20px;
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+}
+.container_market .content_market .market_vermas li:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
+.container_market .content_market .market_vermas a {
+  text-decoration: none;
+  color: #040157;
+}
+.container_market .content_market .market_vermas a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.container_market .content_market strong {
+  font-weight: 900;
+}
+.container_market .content_market .dropdown-menu {
+  border: none;
+}
+.container_market .content_market .dropdown-menu li {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.container_market .content_market .dropdown-menu li span {
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=style.css.map */
