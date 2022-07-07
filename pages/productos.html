@@ -148,17 +148,17 @@
     </section>
 
     <!-- Start_Section-Productos -->
-    <section class="container" style="margin-top: 15px;">
+    <section class="container-fluid" style="margin-top: 15px;">
         <div class=" row">
         <!-- Start_filter-DESKTOP -->
-        <div class="filter_productos-desktop col-3" style="position: sticky; top: 0; height: 600px;">
+        <div class="filter_productos-desktop col-4" style="position: sticky; top: 0; height: 600px;">
             <div class="content_filter-desktop">
                 <h4>Buscar</h4>
                 <h6>Palabra Clave</h6>
                 <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
             </div>
             <div class="content_filter-desktop">
-                <h5>Ciudad</h5>
+                <h6>Ciudad</h6>
                 <select name="selector_donde" class="input_filter">
                     <option value=>¿Donde?</option>
                     <option value="buenos_aires">Buenos Aires</option>
@@ -167,7 +167,7 @@
                 </select>
             </div>
             <div class="content_filter-desktop">
-                <h3>Categoría</h3>
+                <h6>Categoría</h6>
                 <select name="selector_category" class="input_filter">
                     <option value=>Todos los productos</option>
                     <option value="inmuebles">Inmuebles</option>
@@ -178,24 +178,24 @@
                     <option value="nfts">NFTs</option>
                 </select>
             </div>
-            <div class="content_filter-desktop">
+            <div class="content_filter-desktop-sc">
                 <div class="row_checkbox">
                     <input type="checkbox" name="smart_contract">
-                    <label for="smart_contracts">Solo productos por Smart Contract</label>
+                    <label for="smart_contracts">Solo por Smart Contract</label>
                 </div>
             </div>
             <div class="content_filter-desktop">
-                <h3>Precio</h3>
-                <input type="number" name="prince_min" placeholder="Mín." class="me-2">
+                <h6>Precio</h6>
+                <input type="number" name="prince_min" placeholder="Mín.">
                 <input type="number" name="price_max" placeholder="Máx.">
             </div>
-            <div class="content_filter-desktop">
-                <h3>Entrega</h3>
+            <div class="content_filter-desktop-check">
+                <h6>Entrega</h6>
                 <input type="checkbox" name="delivery" checked>
                 <label for="delivery">Envío gratis</label>
             </div>
-            <div class="content_filter-desktop">
-                <h3>Condición</h3>
+            <div class="content_filter-desktop-cond">
+                <h6>Condición</h6>
                 <input type="checkbox" name="todos">
                 <label for="condicion">Todos</label>
                 <input type="checkbox" name="nuevos">
@@ -203,13 +203,13 @@
                 <input type="checkbox" name="usado">
                 <label for="usado">Usado</label>
             </div>
-            <div class="btn_filter">
-                <button type="submit" class="btn_filter-canvas"><i class='bx bx-search-alt'></i></button>
+            <div class="btn-desktop">
+                <button type="submit" class="btn_filter-desktop"><i class='bx bx-search-alt'></i></button>
             </div>
         </div>
         <!-- End_filter-DESKTOP -->
         <!-- Start_Productos -->
-        <div class="container_producto col-9">
+        <div class="container_producto col-8">
             <div class="content_producto">
                 <div class="img_product">
                     <img src="../multimedia/casa_one.jpg" alt="" class="rounded mx-auto d-block img-fluid">

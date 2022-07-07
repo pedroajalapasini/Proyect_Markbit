@@ -649,14 +649,89 @@ body footer {
   width: 100%;
   height: 80%;
 }
-.offcanvas-body .sc_checkbox {
-  background-color: aqua;
-}
 
 @media only screen and (max-width: 600px) {
   .filter_productos-desktop {
     display: none;
   }
+}
+.filter_productos-desktop .content_filter-desktop {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  margin: 5px;
+  align-items: baseline;
+}
+.filter_productos-desktop .content_filter-desktop input,
+.filter_productos-desktop .content_filter-desktop label {
+  height: 25px;
+}
+.filter_productos-desktop .content_filter-desktop h6 {
+  font-size: 14pt;
+}
+.filter_productos-desktop .content_filter-desktop-sc {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.filter_productos-desktop .content_filter-desktop-check,
+.filter_productos-desktop .content_filter-desktop-cond {
+  margin: 5px;
+}
+.filter_productos-desktop .content_filter-desktop-check h6,
+.filter_productos-desktop .content_filter-desktop-cond h6 {
+  font-size: 14pt;
+}
+.filter_productos-desktop .btn-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter_productos-desktop .btn-desktop .btn_filter-desktop {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 20px;
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content_producto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.content_producto .img_product {
+  width: 450px;
+}
+.content_producto .info_product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 5px;
+}
+.content_producto .info_product li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.content_producto .container_comprar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.content_producto .container_comprar li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
