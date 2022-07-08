@@ -65,23 +65,33 @@
     <!-- End_Header -->
     <!-- Start_Content_Contacto -->
     <main>
-        <div class="container_contacto">
-            <form action="db_contacto" method="post" class="contacto_form">
+        <div class="container-fluid">
+            <form action="db_contacto" method="post" class="contacto_form container-fluid">
                 <h2>Contactanos</h2>
-                <h4>Tu nombre*</h4>
-                <input type="text" name="" id="">
-                <h4>Email*</h4>
-                <input type="email" name="" id="">
-                <h4>Asunto*</h4>
-                <input type="text" name="" id="">
-                <h4>Mensaje*</h4>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Enviar</button>
+                <div class="info_form">
+                    <label for="nombre">Tu nombre*</label>
+                    <input type="text" name="nombre" id="">
+                </div>
+                <div class="info_form">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="info_form">
+                    <label for="asunto">Asunto*</label>
+                    <input type="text" name="asunto" id="">
+                </div>
+                <div class="info_form">
+                    <label for="nombre">Mensaje*</label>
+                    <textarea name="mensaje" id="" cols="25" rows="5"></textarea>
+                </div>
+                <div class="info_form">
+                    <button type="submit">Enviar</button>
+                </div>
                 <div class="content_rrss">
                     <span>También por vía redes sociales</span>
                     <ul>
-                        <li><a href="Whatsapp"><i class='bx bxl-whatsapp'></i></a></li>
-                        <li><a href="Telegram"><i class='bx bxl-telegram'></i></a></li>
+                        <li><a href="#Whatsapp"><i class='bx bxl-whatsapp bxl_forms'></i></a></li>
+                        <li><a href="#Telegram"><i class='bx bxl-telegram bxl_forms'></i></a></li>
                     </ul>
                 </div>
             </form>
@@ -107,7 +117,7 @@
             <li><i class='bx bxl-whatsapp'></i><a href="#link_whatsapp">54 11 54789564</a></li>
             <li><i class='bx bxl-instagram'></i><a href="#Instagram">Instagram</a></li>
             <li><i class='bx bxl-telegram'></i><a href="#Telegram">Telegram</a></li>
-            <li><i class='bx bxl-twitter'></i><a href="Twitter">Twitter</a></li>
+            <li><i class='bx bxl-twitter'></i><a href="#Twitter">Twitter</a></li>
         </div>
         <div class="creditos">
             <span>© 2022 <strong>AJALA</strong></span>

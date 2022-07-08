@@ -876,4 +876,13 @@ body footer {
   text-decoration: none;
 }
 
+/*CONTACTOS*/
+.contacto_form {
+  text-align: center;
+  margin-top: 10px;
+}
+.contacto_form .info_form {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
