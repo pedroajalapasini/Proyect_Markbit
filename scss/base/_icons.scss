@@ -1,38 +1,50 @@
 .bxl-whatsapp {
     color: green;
+    font-size: 12pt;
 }
 
 .bxl-instagram {
     color: #a31777;
+    font-size: 12pt;
 }
 
 .bxl-telegram {
     color: #32a8e8;
+    font-size: 12pt;
 }
 
 .bxl-twitter {
     color: #03a2f7;
+    font-size: 12pt;
 }
 
 .bx-envelope {
     color: #666;
+    font-size: 12pt;
 }
 .bxl-bitcoin {
     color: #F58634;
     font-size: 16pt;
+    
 }
 
 .bxs-dollar-circle {
     color: green;
     font-size: 16pt;
 }
-
-.bxs-check-circle {
-    color: #014457;
+.bx-user-check{
     font-size: 16pt;
+    color: #32a8e8;
 }
+.bx-check-shield{
+    font-size: 16pt;
+    color: #014457;
+}
+
+
 .bx-map{
     color: red;
+    font-size: 16pt;
 }
 .bx-atom{
     color: #006faa;
@@ -40,6 +52,7 @@
 }
 .bx-coin-stack{
     color: rgb(60, 0, 255);
+    font-size: 16pt;
 }
 .bx-search-alt{
     color: white;
@@ -48,4 +61,15 @@
 .bx-slider{
     color: white;
     font-size: 20pt;
+}
+.bx-cart-download{
+    color: #040157;
+    font-size: 20pt;
+    &:hover{
+        color: white;
+    }
+    &:active{
+        padding: 5px;
+        transition: 0.3s;
+    }
 }
