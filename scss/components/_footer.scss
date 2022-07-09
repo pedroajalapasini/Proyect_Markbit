@@ -1,6 +1,8 @@
 /* FOOTER - todas las paginas*/
+@import '../base/variables';
 
 footer {
+    font-family: $font-pag;
     margin-top: 2px;
 
     .footerResponsive {

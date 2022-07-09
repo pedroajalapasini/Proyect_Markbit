@@ -1,5 +1,8 @@
 /*CONTACTOS*/
+@import '../base/variables';
+
 .contacto_form{
+    font-family: $font-pag;
     text-align: center;
     margin-top: 10px;
     .info_form{

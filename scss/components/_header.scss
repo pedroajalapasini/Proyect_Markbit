@@ -1,6 +1,9 @@
 /* Header de todas las paginas*/
+@import '../base/variables';
 
 header {
+    font-family: $font-pag;
+    
     .nav-item {
         padding: 5px;
         display: flex;

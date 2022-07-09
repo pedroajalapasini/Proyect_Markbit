@@ -148,12 +148,12 @@
     </section>
 
     <!-- Start_Section-Productos -->
-    <section class="container-fluid" style="margin-top: 15px;">
+    <section class="container-fluid desktop_productos" style="margin-top: 15px;">
         <div class=" row">
         <!-- Start_filter-DESKTOP -->
-        <div class="filter_productos-desktop col-4" style="position: sticky; top: 0; height: 600px;">
+        <div class="filter_productos-desktop bg-light shadow p-1 mb-3 bg-body rounded" style="position: sticky; top: 0; height: 500px;">
+            <h4>Buscar</h4>
             <div class="content_filter-desktop">
-                <h4>Buscar</h4>
                 <h6>Palabra Clave</h6>
                 <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
             </div>
@@ -178,7 +178,7 @@
                     <option value="nfts">NFTs</option>
                 </select>
             </div>
-            <div class="content_filter-desktop-sc">
+            <div class="content_filter-desktop">
                 <div class="row_checkbox">
                     <input type="checkbox" name="smart_contract">
                     <label for="smart_contracts">Solo por Smart Contract</label>
@@ -189,12 +189,12 @@
                 <input type="number" name="prince_min" placeholder="Mín.">
                 <input type="number" name="price_max" placeholder="Máx.">
             </div>
-            <div class="content_filter-desktop-check">
+            <div class="content_filter-desktop">
                 <h6>Entrega</h6>
                 <input type="checkbox" name="delivery" checked>
                 <label for="delivery">Envío gratis</label>
             </div>
-            <div class="content_filter-desktop-cond">
+            <div class="content_filter-desktop">
                 <h6>Condición</h6>
                 <input type="checkbox" name="todos">
                 <label for="condicion">Todos</label>
@@ -203,13 +203,13 @@
                 <input type="checkbox" name="usado">
                 <label for="usado">Usado</label>
             </div>
-            <div class="btn-desktop">
+            <div class="btn_filter">
                 <button type="submit" class="btn_filter-desktop"><i class='bx bx-search-alt'></i></button>
             </div>
         </div>
         <!-- End_filter-DESKTOP -->
         <!-- Start_Productos -->
-        <div class="container_producto col-8">
+        <div class="container_producto">
             <div class="content_producto">
                 <div class="img_product">
                     <img src="../multimedia/casa_one.jpg" alt="" class="rounded mx-auto d-block img-fluid">
