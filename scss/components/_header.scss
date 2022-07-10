@@ -1,12 +1,9 @@
 /* Header de todas las paginas*/
-@import '../base/variables';
 
 header {
     font-family: $font-pag;
     
     .nav-item {
-        padding: 5px;
-        display: flex;
         padding: 5px;
         display: flex;
         flex-direction: row;
@@ -40,9 +37,9 @@ header {
         margin: 5px;
     }
 
-    .filter_header input {
+    form .form-control {
         border: none;
-        border-bottom: 1px solid #a200ff;
+        border-bottom: 1px solid #040157;
     }
 
     button.btn {

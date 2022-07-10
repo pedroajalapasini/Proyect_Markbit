@@ -1,6 +1,6 @@
 /*CONTACTOS*/
 
-form {
+.contact{
     font-family: $font-pag;
     display: flex;
     flex-wrap: nowrap;
@@ -12,7 +12,7 @@ form {
 
     h2 {
         text-decoration: map-get($titulos , decoration);
-        font-size: map-get($bx-icon , font4);
+        font-size: map-get($fonts , font4);
     }
 
     .info_form {
@@ -22,7 +22,7 @@ form {
         
 
         label {
-            font-size: map-get($bx-icon , font1);
+            font-size: map-get($fonts , font1);
         }
 
         input {
@@ -53,7 +53,7 @@ form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-top: 1px solid map-get($bx-icon ,comprar );
+        border-top: 1px solid map-get($colores ,comprar );
         ul {
             display: flex;
             padding: 0;
@@ -63,7 +63,7 @@ form {
                 margin: 0;
                 list-style: none;
                 i{
-                    font-size: map-get($bx-icon, font4 );
+                    font-size: map-get($fonts, font4 );
                 }
             }
         }

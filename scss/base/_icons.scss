@@ -1,79 +1,79 @@
 /* ICONOS */
 .bxl-whatsapp{
-    color: map-get($bx-icon,whatsapp );
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,whatsapp );
+    font-size: map-get($fonts ,font1 );
 }
 
 .bxl-instagram {
-    color: map-get($bx-icon,instagram );
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,instagram );
+    font-size: map-get($fonts ,font1 );
 
 }
 
 .bxl-telegram {
-    color: map-get($bx-icon,telegram );
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,telegram );
+    font-size: map-get($fonts ,font1 );
 }
 
 .bxl-twitter {
-    color: map-get($bx-icon,twitter);
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,twitter);
+    font-size: map-get($fonts ,font1 );
 }
 
 .bx-envelope {
-    color: map-get($bx-icon,email );
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,email );
+    font-size: map-get($fonts ,font1 );
 }
 
 .bxl-bitcoin {
-    color: map-get($bx-icon,bitcoin );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,bitcoin );
+    font-size: map-get($fonts ,font2 );
 
 }
 
 .bxs-dollar-circle {
-    color: map-get($bx-icon,dolar );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,dolar );
+    font-size: map-get($fonts ,font2 );
 }
 
 .bx-user-check {
-    color: map-get($bx-icon,dvendedor );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,dvendedor );
+    font-size: map-get($fonts ,font2 );
 }
 
 .bx-check-shield {
-    color: map-get($bx-icon,scontract );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,scontract );
+    font-size: map-get($fonts ,font2 );
 }
 
 
 .bx-map {
-    color: map-get($bx-icon,maps );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,maps );
+    font-size: map-get($fonts ,font2 );
 }
 .bx-atom {
-    color: map-get($bx-icon,atom );
-    font-size: map-get($bx-icon ,font1 );
+    color: map-get($colores,atom );
+    font-size: map-get($fonts ,font1 );
 }
 
 .bx-coin-stack {
-    color: map-get($bx-icon,redes );
-    font-size: map-get($bx-icon ,font2 );
+    color: map-get($colores,redes );
+    font-size: map-get($fonts ,font2 );
 }
 
 .bx-search-alt {
-    color: map-get($bx-icon,generic );
-    font-size: map-get($bx-icon ,font3 );
+    color: map-get($colores,generic );
+    font-size: map-get($fonts ,font3 );
 }
 
 .bx-slider {
-    color: map-get($bx-icon,generic );
-    font-size: map-get($bx-icon ,font3 );
+    color: map-get($colores,generic );
+    font-size: map-get($fonts ,font3 );
 }
 
 .bx-cart-download {
-    color: map-get($bx-icon,comprar );
-    font-size: map-get($bx-icon ,font3 );
+    color: map-get($colores,comprar );
+    font-size: map-get($fonts ,font3 );
 
     &:hover {
         color: white;

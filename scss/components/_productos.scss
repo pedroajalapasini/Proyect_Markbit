@@ -13,23 +13,19 @@
         }
 
         /* ---------------Medias------------------*/
-        /* mobile */
         @media only screen and (max-width: 600px) {
             display: none;
         }
 
-        /* tablet */
         @media only screen and (max-width: 880px) {
             height: 600px;
         }
 
-        /* large-desktop */
         @media only screen and (min-width: 1020px) {
             width: 250px;
             height: 600px;
         }
 
-        /* contenido_filter */
         .content_filter-desktop {
             margin: 6px;
 
@@ -79,24 +75,21 @@
 
 
         /* ---------------Medias------------------*/
-        /* mobile */
+
         @media only screen and (min-width: 500px) {
             width: 100%;
         }
 
-        /* tablet */
         @media only screen and (min-width: 600px) {
             width: 450px;
 
         }
 
-        /* large-desktop */
         @media only screen and (min-width: 1200px) {
             width: 780px;
         }
     }
 
-    /* contenido_productos*/
 
     .content_producto {
         display: flex;
@@ -107,9 +100,9 @@
             position: relative;
 
             h5 {
-                text-align: map-get($titulos , title );
+                @extend %titulos;
                 font-weight: 900;
-                font-size: map-get($bx-icon , font3 );
+                font-size: map-get($fonts , font3 );
                 margin-top: map-get($btn_mobile , mg );
 
                 @media only screen and (max-width: 425px) {
@@ -147,7 +140,7 @@
                         font-size: 25pt;
 
                         &:hover {
-                            color: map-get($bx-icon , generic );
+                            color: map-get($colores , generic );
                             transition: 0.8s;
                         }
                     }

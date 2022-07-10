@@ -83,14 +83,16 @@
 }
 
 /* EXTENDS */
+.container_contacto h2, .desktop_productos .content_producto .info_product h5, section .title_publicar h2 {
+  text-align: center;
+  padding-top: 5px;
+}
+
 /* Header de todas las paginas*/
-/* variables*/
 header {
   font-family: "Nunito Sans", sans-serif;
 }
 header .nav-item {
-  padding: 5px;
-  display: flex;
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -120,9 +122,9 @@ header .filter_header {
   align-items: center;
   margin: 5px;
 }
-header .filter_header input {
+header form .form-control {
   border: none;
-  border-bottom: 1px solid #a200ff;
+  border-bottom: 1px solid #040157;
 }
 header button.btn {
   padding: 5px;
@@ -347,7 +349,6 @@ section .container_ofertas .content_ofertas li {
 }
 
 /* Section_Four-INDEX */
-/* variables*/
 section {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -377,15 +378,13 @@ section .title_publicar {
   }
 }
 section .title_publicar h2 {
-  text-align: center;
   color: #7a08e4;
   font-size: 20pt;
-  padding-top: 5px;
 }
 section .title_publicar h4 {
   text-align: center;
   color: #942ff3;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 section .info_publicar {
   display: flex;
@@ -409,7 +408,6 @@ section .info_publicar .content_publicar {
 }
 
 /* FOOTER - todas las paginas*/
-/* variables*/
 footer {
   font-family: "Nunito Sans", sans-serif;
   margin-top: 2px;
@@ -664,18 +662,11 @@ footer .creditos {
 }
 
 /* PRODUCTOS*/
-.desktop_productos {
-  /* contenido_productos*/
-}
 .desktop_productos .filter_productos-desktop {
   width: 200px;
   height: 800px;
   margin: 6px;
   /* ---------------Medias------------------*/
-  /* mobile */
-  /* tablet */
-  /* large-desktop */
-  /* contenido_filter */
 }
 .desktop_productos .filter_productos-desktop h4 {
   text-align: center;
@@ -736,9 +727,6 @@ footer .creditos {
 .desktop_productos .container_producto {
   width: 800px;
   /* ---------------Medias------------------*/
-  /* mobile */
-  /* tablet */
-  /* large-desktop */
 }
 @media only screen and (min-width: 500px) {
   .desktop_productos .container_producto {
@@ -764,7 +752,6 @@ footer .creditos {
   position: relative;
 }
 .desktop_productos .content_producto .info_product h5 {
-  text-align: center;
   font-weight: 900;
   font-size: 20pt;
 }
@@ -804,7 +791,7 @@ footer .creditos {
 }
 
 /*CONTACTOS*/
-form {
+.contact {
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-wrap: nowrap;
@@ -814,55 +801,126 @@ form {
   align-items: center;
   margin-top: 5px;
 }
-form h2 {
+.contact h2 {
   text-decoration: underline;
   font-size: 23pt;
 }
-form .info_form {
+.contact .info_form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-form .info_form label {
+.contact .info_form label {
   font-size: 12pt;
 }
-form .info_form input {
+.contact .info_form input {
   width: 100%;
 }
-form .btn_filter-canvas {
+.contact .btn_filter-canvas {
   padding: 8px;
   margin: 5px;
   border-radius: 20px;
   border: none;
   background: linear-gradient(0deg, rgba(50, 168, 232, 0.4941176471), rgba(124, 21, 202, 0.5843137255), rgba(148, 47, 243, 0.6392156863));
 }
-form .btn_filter-canvas:hover {
+.contact .btn_filter-canvas:hover {
   background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
   transition: 0.2s;
   color: white;
 }
-form .btn_filter-canvas:active {
+.contact .btn_filter-canvas:active {
   padding: 3px;
   transition: 0.1s;
 }
-form .content_rrss {
+.contact .content_rrss {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 1px solid #040157;
 }
-form .content_rrss ul {
+.contact .content_rrss ul {
   display: flex;
   padding: 0;
   width: 100%;
   justify-content: space-evenly;
 }
-form .content_rrss ul li {
+.contact .content_rrss ul li {
   margin: 0;
   list-style: none;
 }
-form .content_rrss ul li i {
+.contact .content_rrss ul li i {
   font-size: 23pt;
+}
+
+.container_contacto {
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 6px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container_contacto h2 {
+  text-decoration: underline;
+  font-size: 23pt;
+}
+.container_contacto form .btn_filter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.container_contacto form .btn_filter .btn-contact {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(0deg, rgba(50, 168, 232, 0.4941176471), rgba(124, 21, 202, 0.5843137255), rgba(148, 47, 243, 0.6392156863));
+}
+.container_contacto form .btn_filter .btn-contact:hover {
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  transition: 0.3s;
+  color: white;
+}
+.container_contacto form .content_rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #040157;
+}
+.container_contacto form .content_rrss ul {
+  padding: 0;
+  margin: 0;
+}
+.container_contacto form .content_rrss ul li {
+  list-style: none;
+}
+.container_contacto form .content_rrss ul li i {
+  font-size: 23pt;
+}
+.container_contacto form .btn_form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.container_contacto form .btn_form li {
+  list-style: none;
+  margin-top: 5px;
+}
+.container_contacto form .btn_form li a {
+  text-decoration: none;
+  color: #040157;
+  padding: 8px;
+  border-radius: 20px;
+}
+.container_contacto form .btn_form li a:hover {
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  transition: 0.3s;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

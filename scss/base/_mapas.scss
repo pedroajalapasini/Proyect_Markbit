@@ -12,7 +12,7 @@ $btn_mobile: (
     mgn:5px,
 );
 
-$bx-icon: (
+$colores: (
     whatsapp:#008000,
     twitter:#03a2f7,
     instagram: #a31777,
@@ -27,7 +27,9 @@ $bx-icon: (
     dvendedor: #32a8e8,
     maps:red,
     atom:#006faa,
+);
 
+$fonts: (
     font1:12pt,
     font2:16pt,
     font3:20pt,
@@ -36,6 +38,6 @@ $bx-icon: (
 );
 
 $titulos:(
-    title: center,
     decoration: underline,
+    text-d: none,
 );

@@ -1,0 +1,56 @@
+.container_contacto {
+    font-family: $font-pag;
+    margin-bottom: 6px;
+
+    @include formularios (center);
+
+    h2 {
+        text-decoration: map-get($titulos , decoration);
+        font-size: map-get($fonts , font4);
+        @extend %titulos;
+    }
+
+    form {
+        .btn_filter {
+            @include formularios (space-evenly);
+
+            .btn-contact {
+                @include btn-contact;
+                @include bt-hover;
+            }
+        }
+
+        .content_rrss {
+            @include contentForm (center);
+            border-top: 1px solid map-get($colores , comprar);
+
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+
+                    i {
+                        font-size: map-get($fonts, font4);
+                    }
+                }
+            }
+        }
+        .btn_form{
+            @include formularios (space-evenly);
+            li{
+                list-style: none;
+                margin-top: map-get($btn_mobile, mgn );
+
+                a{
+                    text-decoration: map-get($titulos , text-d );
+                    color: map-get($colores, comprar );
+                    padding: map-get($btn_mobile , pdn );
+                    border-radius: map-get($botones, bd-radio );
+                    @include bt-hover;
+                }
+            }
+        }
+    }
+}
