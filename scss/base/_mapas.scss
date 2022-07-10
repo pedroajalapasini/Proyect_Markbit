@@ -1,0 +1,41 @@
+/* Mapas */
+
+$botones: (
+    pdn: 1px,
+    mgn: 1px,
+    bd-radio: 20px,
+    bd: none,
+);
+
+$btn_mobile: (
+    pdn:8px,
+    mgn:5px,
+);
+
+$bx-icon: (
+    whatsapp:#008000,
+    twitter:#03a2f7,
+    instagram: #a31777,
+    email: #666,
+    telegram: #32a8e8,
+    bitcoin: #F58634,
+    dolar: #10c110,
+    redes: #3c00ff,
+    generic: white, 
+    comprar:#040157,
+    scontract: #014457,
+    dvendedor: #32a8e8,
+    maps:red,
+    atom:#006faa,
+
+    font1:12pt,
+    font2:16pt,
+    font3:20pt,
+    font4:23pt,
+    font5:25pt,
+);
+
+$titulos:(
+    title: center,
+    decoration: underline,
+);

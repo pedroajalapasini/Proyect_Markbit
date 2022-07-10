@@ -1,11 +1,71 @@
 /*CONTACTOS*/
-@import '../base/variables';
 
-.contacto_form{
+form {
     font-family: $font-pag;
-    text-align: center;
-    margin-top: 10px;
-    .info_form{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: map-get($btn_mobile, mgn);
+
+    h2 {
+        text-decoration: map-get($titulos , decoration);
+        font-size: map-get($bx-icon , font4);
+    }
+
+    .info_form {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+
+        label {
+            font-size: map-get($bx-icon , font1);
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .btn_filter-canvas {
+        padding: map-get($btn_mobile, pdn);
+        margin: map-get($btn_mobile, mgn);
+        border-radius: map-get($botones, bd-radio);
+        border: map-get($botones , bd);
+        background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
+
+        &:hover {
+            background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+            transition: 0.2s;
+            color: white
+        }
+
+        &:active {
+            padding: 3px;
+            transition: 0.1s;
+        }
+    }
+
+    .content_rrss {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid map-get($bx-icon ,comprar );
+        ul {
+            display: flex;
+            padding: 0;
+            width: 100%;
+            justify-content: space-evenly;
+            li {
+                margin: 0;
+                list-style: none;
+                i{
+                    font-size: map-get($bx-icon, font4 );
+                }
+            }
+        }
     }
 }

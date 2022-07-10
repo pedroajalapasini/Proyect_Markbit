@@ -1,74 +1,85 @@
-.bxl-whatsapp {
-    color: green;
-    font-size: 12pt;
+/* ICONOS */
+.bxl-whatsapp{
+    color: map-get($bx-icon,whatsapp );
+    font-size: map-get($bx-icon ,font1 );
 }
 
 .bxl-instagram {
-    color: #a31777;
-    font-size: 12pt;
+    color: map-get($bx-icon,instagram );
+    font-size: map-get($bx-icon ,font1 );
+
 }
 
 .bxl-telegram {
-    color: #32a8e8;
-    font-size: 12pt;
+    color: map-get($bx-icon,telegram );
+    font-size: map-get($bx-icon ,font1 );
 }
 
 .bxl-twitter {
-    color: #03a2f7;
-    font-size: 12pt;
+    color: map-get($bx-icon,twitter);
+    font-size: map-get($bx-icon ,font1 );
 }
 
 .bx-envelope {
-    color: #666;
-    font-size: 12pt;
+    color: map-get($bx-icon,email );
+    font-size: map-get($bx-icon ,font1 );
 }
+
 .bxl-bitcoin {
-    color: #F58634;
-    font-size: 16pt;
-    
+    color: map-get($bx-icon,bitcoin );
+    font-size: map-get($bx-icon ,font2 );
+
 }
 
 .bxs-dollar-circle {
-    color: green;
-    font-size: 16pt;
+    color: map-get($bx-icon,dolar );
+    font-size: map-get($bx-icon ,font2 );
 }
-.bx-user-check{
-    font-size: 16pt;
-    color: #32a8e8;
+
+.bx-user-check {
+    color: map-get($bx-icon,dvendedor );
+    font-size: map-get($bx-icon ,font2 );
 }
-.bx-check-shield{
-    font-size: 16pt;
-    color: #014457;
+
+.bx-check-shield {
+    color: map-get($bx-icon,scontract );
+    font-size: map-get($bx-icon ,font2 );
 }
 
 
-.bx-map{
-    color: red;
-    font-size: 16pt;
+.bx-map {
+    color: map-get($bx-icon,maps );
+    font-size: map-get($bx-icon ,font2 );
 }
-.bx-atom{
-    color: #006faa;
-    font-size: 12pt;
+.bx-atom {
+    color: map-get($bx-icon,atom );
+    font-size: map-get($bx-icon ,font1 );
 }
-.bx-coin-stack{
-    color: rgb(60, 0, 255);
-    font-size: 16pt;
+
+.bx-coin-stack {
+    color: map-get($bx-icon,redes );
+    font-size: map-get($bx-icon ,font2 );
 }
-.bx-search-alt{
-    color: white;
-    font-size: 20pt;
+
+.bx-search-alt {
+    color: map-get($bx-icon,generic );
+    font-size: map-get($bx-icon ,font3 );
 }
-.bx-slider{
-    color: white;
-    font-size: 20pt;
+
+.bx-slider {
+    color: map-get($bx-icon,generic );
+    font-size: map-get($bx-icon ,font3 );
 }
-.bx-cart-download{
-    color: #040157;
-    font-size: 20pt;
-    &:hover{
+
+.bx-cart-download {
+    color: map-get($bx-icon,comprar );
+    font-size: map-get($bx-icon ,font3 );
+
+    &:hover {
         color: white;
     }
-    &:active{
+
+    &:active {
         padding: 5px;
         transition: 0.3s;
     }

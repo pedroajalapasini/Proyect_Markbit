@@ -1,4 +1,5 @@
 /* PRODUCTOS*/
+
 .desktop_productos {
 
     .filter_productos-desktop {
@@ -11,17 +12,20 @@
             text-decoration: underline;
         }
 
-        /* Medias */
+        /* ---------------Medias------------------*/
+        /* mobile */
         @media only screen and (max-width: 600px) {
             display: none;
         }
 
-        @media only screen and (min-width: 1020px) {
-            width: 250px;
+        /* tablet */
+        @media only screen and (max-width: 880px) {
             height: 600px;
         }
 
-        @media only screen and (max-width: 880px) {
+        /* large-desktop */
+        @media only screen and (min-width: 1020px) {
+            width: 250px;
             height: 600px;
         }
 
@@ -39,12 +43,11 @@
         }
 
         .btn_filter-desktop {
-            padding: 1px;
-            margin: 1px;
-            border-radius: 20px;
-            border: none;
+            padding: map-get($botones, pdn);
+            margin: map-get($botones, mgn);
+            border-radius: map-get($botones, bd-radio);
+            border: map-get($botones , bd);
             background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -75,17 +78,20 @@
         width: 800px;
 
 
-        /* Medias */
+        /* ---------------Medias------------------*/
+        /* mobile */
         @media only screen and (min-width: 500px) {
-            width: 550px;
+            width: 100%;
         }
 
+        /* tablet */
         @media only screen and (min-width: 600px) {
-            width: 550px;
+            width: 450px;
 
         }
 
-        @media only screen and (min-width: 1022px) {
+        /* large-desktop */
+        @media only screen and (min-width: 1200px) {
             width: 780px;
         }
     }
@@ -99,11 +105,12 @@
 
         .info_product {
             position: relative;
+
             h5 {
-                text-align: center;
+                text-align: map-get($titulos , title );
                 font-weight: 900;
-                font-size: 20pt;
-                margin-top: 5px;
+                font-size: map-get($bx-icon , font3 );
+                margin-top: map-get($btn_mobile , mg );
 
                 @media only screen and (max-width: 425px) {
                     font-size: 15pt;
@@ -123,23 +130,25 @@
             li {
                 list-style: none;
                 background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
-                width: 45px;
-                border-radius: 20px;
-                display: flex;
-                align-content: space-around;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                flex-wrap: nowrap;
+                width: 40px;
+                border-radius: 40px;
                 margin-top: 5px;
                 margin-left: 5px;
-                a{
-                    i{
-                        font-size:25pt;
+                text-align: center;
 
-                        &:hover{
-                            color: white;
-                            transition: 0.2s;
+                &:hover {
+                    transition: 0.5s;
+                    background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+                }
+
+                a {
+                    i {
+                        margin-top: map-get($btn_mobile , mgn);
+                        font-size: 25pt;
+
+                        &:hover {
+                            color: map-get($bx-icon , generic );
+                            transition: 0.8s;
                         }
                     }
 
