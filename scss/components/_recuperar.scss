@@ -1,15 +1,13 @@
-.container_contacto {
+/* Recuperar */
+.container_register {
     font-family: $font-pag;
-    margin-bottom: 6px;
-
-    @include formularios (center);
+    @include register-disp (flex, column, center, center);
 
     h2 {
         text-decoration: map-get($dec-titles , decoration);
-        font-size: map-get($fonts , font4);
+        font-size: map-get($fonts , font3);
         @extend %titulos;
     }
-
     form {
         .btn_filter {
             margin-top: map-get($btn_mobile, mgn );
@@ -18,23 +16,6 @@
             .btn-contact {
                 @include btn-contact;
                 @include bt-hover;
-            }
-        }
-
-        .content_rrss {
-            @include contentForm (center);
-            border-top: 1px solid map-get($colores , comprar);
-
-            ul {
-                @extend %ul-decor;
-
-                li {
-                    list-style: none;
-
-                    i {
-                        font-size: map-get($fonts, font4);
-                    }
-                }
             }
         }
         .btn_form{

@@ -15,6 +15,14 @@
     
 };
 
+@mixin register-disp ($display, $direction, $items, $jContent) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $items;
+    justify-content: $jContent;
+    
+}
+
 @mixin btn-contact {
     padding: map-get($btn_mobile, pdn);
         margin: map-get($btn_mobile, mgn);
@@ -29,6 +37,4 @@
         transition: 0.3s;
         color: white
     }
-}
-
-//@mixin redes-sociales
+};

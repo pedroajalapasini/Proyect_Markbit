@@ -2,20 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- TAGS META -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarKt₿it</title>
+    <!-- TAG DESCRIPTION -->
+    <meta name="description"
+        content="MarKt₿it es la primer plataforma marketplace P2P de LatinoAmerica, donde podes comercializar productos, servicios, bienes con un sólo método de pago: criptomonedas, a través de Smart Contract. En MarKt₿it, la confianza es súper importante tanto a la hora de comprar, como de vender 🤝">
+    <!-- TAG KEYWORDS -->
+    <meta name="keywords" content="marketplace, ecommerce, crypto, criptomomedas, venta, compra, publicar, p2p, 
+    nft, autos, casas, usdt, usdc, dai, bitcoin, productos, latam, redes, metaverso">
+    <!-- TAG OPENGRAFH -->
+    <meta property="og:title" content="MarKt₿it, el primer marketplace P2P de LATAM">
+    <meta property="og:site_name" content="Marktbit.com">
+    <meta property="og:description"
+        content="MarKt₿it es la primer plataforma marketplace P2P de LatinoAmerica, donde podes comercializar productos, servicios, bienes con un sólo método de pago: criptomonedas, a través de Smart Contract. En MarKt₿it, la confianza es súper importante tanto a la hora de comprar, como de vender 🤝">
+    <meta property="og:image" content="https://pedroajalapasini.github.io/Proyect_Markbit/multimedia/brand_final.png">
+    <!-- TAG TITLE -->
+    <title>MarKt₿it, el primer marketplace P2P de LATAM</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Teko:wght@300;400&display=swap"
         rel="stylesheet">
-    <!-- ANIMATION -->
-
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- BOOTSTRAP -->
@@ -65,36 +82,22 @@
     <!-- End_Header -->
     <!-- Start_Content_Contacto -->
     <main>
-        <div class="container-fluid">
-            <form action="db_contacto" method="post" class="container-fluid contact">
-                <h2>Contactanos</h2>
-                <div class="info_form ">
-                    <label for="nombre">Tu nombre*</label>
-                    <input type="text" name="nombre">
-                </div>
-                <div class="info_form">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="info_form ">
-                    <label for="asunto">Asunto*</label>
-                    <input type="text" name="asunto">
-                </div>
-                <div class="info_form">
-                    <label for="nombre">Mensaje*</label>
-                    <textarea name="mensaje" id="" cols="21" rows="4"></textarea>
-                </div>
-                <div class="btn_filter ">
-                    <button type="submit" class="btn_filter-canvas">Enviar</button>
-                </div>
-                <div class="content_rrss">
-                    <span>También por vía redes sociales</span>
-                    <ul>
-                        <li><a href="#Whatsapp"><i class='bx bxl-whatsapp bxl_forms'></i></a></li>
-                        <li><a href="#Telegram"><i class='bx bxl-telegram bxl_forms'></i></a></li>
-                    </ul>
-                </div>
-            </form>
+            <div class="container_contacto">
+                <form>
+                    <h2>Ingresar</h2>
+                    <div class="mb-3">
+                        <label for="Inputnombre" class="form-label">Tu nombre*</label>
+                        <input type="text" class="form-control" id="Inputnombre">
+                        <label for="InputEmail" class="form-label">Email*</label>
+                        <input type="text" class="form-control" id="InputEmail">
+                        <label for="InputAsunto" class="form-label">Asunto*</label>
+                        <input type="text" class="form-control" id="InputAsunto">
+                        <label for="InputMensaje" class="form-label">Mensaje*</label>
+                        <textarea type="text" class="form-control" id="InputMensaje"></textarea>
+                        <div class="btn_filter">
+                            <button type="submit" class="btn-contact">Ingresar</button>
+                        </div>
+                    </div>
         </div>
     </main>
     <!-- End_Content_Contacto -->

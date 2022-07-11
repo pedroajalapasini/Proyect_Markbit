@@ -2,20 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- TAGS META -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarKt₿it</title>
+    <!-- TAG DESCRIPTION -->
+    <meta name="description"
+        content="MarKt₿it es la primer plataforma marketplace P2P de LatinoAmerica, donde podes comercializar productos, servicios, bienes con un sólo método de pago: criptomonedas, a través de Smart Contract. En MarKt₿it, la confianza es súper importante tanto a la hora de comprar, como de vender 🤝">
+    <!-- TAG KEYWORDS -->
+    <meta name="keywords" content="marketplace, ecommerce, crypto, criptomomedas, venta, compra, publicar, p2p, 
+ nft, autos, casas, usdt, usdc, dai, bitcoin, productos, latam, redes, metaverso">
+    <!-- TAG OPENGRAFH -->
+    <meta property="og:title" content="MarKt₿it, el primer marketplace P2P de LATAM">
+    <meta property="og:site_name" content="Marktbit.com">
+    <meta property="og:description"
+        content="MarKt₿it es la primer plataforma marketplace P2P de LatinoAmerica, donde podes comercializar productos, servicios, bienes con un sólo método de pago: criptomonedas, a través de Smart Contract. En MarKt₿it, la confianza es súper importante tanto a la hora de comprar, como de vender 🤝">
+    <meta property="og:image" content="https://pedroajalapasini.github.io/Proyect_Markbit/multimedia/brand_final.png">
+    <!-- TAG TITLE -->
+    <title>MarKt₿it, el primer marketplace P2P de LATAM</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Teko:wght@300;400&display=swap"
         rel="stylesheet">
-    <!-- ANIMATION -->
-
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- BOOTSTRAP -->
@@ -150,249 +167,256 @@
     <!-- Start_Section-Productos -->
     <section class="container-fluid desktop_productos" style="margin-top: 15px;">
         <div class="row">
-        <!-- Start_filter-DESKTOP -->
-        <div class="filter_productos-desktop bg-light shadow p-1 mb-3 bg-body rounded" style="position: sticky; top: 0; height: 500px;">
-            <h4>Buscar</h4>
-            <div class="content_filter-desktop">
-                <h6>Palabra Clave</h6>
-                <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
-            </div>
-            <div class="content_filter-desktop">
-                <h6>Ciudad</h6>
-                <select name="selector_donde" class="input_filter">
-                    <option value=>¿Donde?</option>
-                    <option value="buenos_aires">Buenos Aires</option>
-                    <option value="cordoba">Cordoba</option>
-                    <option value="sma">San Martin de los Andes</option>
-                </select>
-            </div>
-            <div class="content_filter-desktop">
-                <h6>Categoría</h6>
-                <select name="selector_category" class="input_filter">
-                    <option value=>Todos los productos</option>
-                    <option value="inmuebles">Inmuebles</option>
-                    <option value="autos">Vehículos</option>
-                    <option value="productos">Productos</option>
-                    <option value="moda">Moda</option>
-                    <option value="mineria">Mineria</option>
-                    <option value="nfts">NFTs</option>
-                </select>
-            </div>
-            <div class="content_filter-desktop">
-                <div class="row_checkbox">
-                    <input type="checkbox" name="smart_contract">
-                    <label for="smart_contracts">Solo por Smart Contract</label>
+            <!-- Start_filter-DESKTOP -->
+            <div class="filter_productos-desktop bg-light shadow p-1 mb-3 bg-body rounded"
+                style="position: sticky; top: 0; height: 500px;">
+                <h4>Buscar</h4>
+                <div class="content_filter-desktop">
+                    <h6>Palabra Clave</h6>
+                    <input type="text" name="palabra_clave" placeholder="¿Qué buscas?" class="input_filter">
+                </div>
+                <div class="content_filter-desktop">
+                    <h6>Ciudad</h6>
+                    <select name="selector_donde" class="input_filter">
+                        <option value=>¿Donde?</option>
+                        <option value="buenos_aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="sma">San Martin de los Andes</option>
+                    </select>
+                </div>
+                <div class="content_filter-desktop">
+                    <h6>Categoría</h6>
+                    <select name="selector_category" class="input_filter">
+                        <option value=>Todos los productos</option>
+                        <option value="inmuebles">Inmuebles</option>
+                        <option value="autos">Vehículos</option>
+                        <option value="productos">Productos</option>
+                        <option value="moda">Moda</option>
+                        <option value="mineria">Mineria</option>
+                        <option value="nfts">NFTs</option>
+                    </select>
+                </div>
+                <div class="content_filter-desktop">
+                    <div class="row_checkbox">
+                        <input type="checkbox" name="smart_contract">
+                        <label for="smart_contracts">Solo por Smart Contract</label>
+                    </div>
+                </div>
+                <div class="content_filter-desktop">
+                    <h6>Precio</h6>
+                    <input type="number" name="prince_min" placeholder="Mín.">
+                    <input type="number" name="prince_max" placeholder="Máx.">
+                </div>
+                <div class="content_filter-desktop">
+                    <h6>Entrega</h6>
+                    <input type="checkbox" name="delivery" checked>
+                    <label for="delivery">Envío gratis</label>
+                </div>
+                <div class="content_filter-desktop">
+                    <h6>Condición</h6>
+                    <input type="checkbox" name="todos">
+                    <label for="condicion">Todos</label>
+                    <input type="checkbox" name="nuevos">
+                    <label for="nuevos">Nuevo</label>
+                    <input type="checkbox" name="usado">
+                    <label for="usado">Usado</label>
+                </div>
+                <div class="btn_filter">
+                    <button type="submit" class="btn_filter-desktop"><i class='bx bx-search-alt'></i></button>
                 </div>
             </div>
-            <div class="content_filter-desktop">
-                <h6>Precio</h6>
-                <input type="number" name="prince_min" placeholder="Mín.">
-                <input type="number" name="prince_max" placeholder="Máx.">
-            </div>
-            <div class="content_filter-desktop">
-                <h6>Entrega</h6>
-                <input type="checkbox" name="delivery" checked>
-                <label for="delivery">Envío gratis</label>
-            </div>
-            <div class="content_filter-desktop">
-                <h6>Condición</h6>
-                <input type="checkbox" name="todos">
-                <label for="condicion">Todos</label>
-                <input type="checkbox" name="nuevos">
-                <label for="nuevos">Nuevo</label>
-                <input type="checkbox" name="usado">
-                <label for="usado">Usado</label>
-            </div>
-            <div class="btn_filter">
-                <button type="submit" class="btn_filter-desktop"><i class='bx bx-search-alt'></i></button>
-            </div>
-        </div>
-        <!-- End_filter-DESKTOP -->
-        <!-- Start_Productos -->
-        <div class="container_producto">
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/casa_one.jpg" alt="img_casa" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>Casa - 2amb - 47,50m3</h5>
-                    <li><i class='bx bxl-bitcoin'></i>3.64393545</li>
-                    <li><i class='bx bxs-dollar-circle'></i>77.000</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Palermo,CABA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/auto_two.jpg" alt="img_auto" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>Fusca - M-Original - 1980 </h2>
-                        <li><i class='bx bxl-bitcoin'></i>0,39984858</li>
-                        <li><i class='bx bxs-dollar-circle'></i>8,450</li>
+            <!-- End_filter-DESKTOP -->
+            <!-- Start_Productos -->
+            <div class="container_producto">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/casa_one.jpg" alt="img_casa" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Casa - 2amb - 47,50m3</h5>
+                        <li><i class='bx bxl-bitcoin'></i>3.64393545</li>
+                        <li><i class='bx bxs-dollar-circle'></i>77.000</li>
                         <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Palermo,CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
+                </div>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/auto_two.jpg" alt="img_auto" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Fusca - M-Original - 1980 </h2>
+                            <li><i class='bx bxl-bitcoin'></i>0,39984858</li>
+                            <li><i class='bx bxs-dollar-circle'></i>8,450</li>
+                            <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                            <li><i class='bx bx-map'></i>Belgrano, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
+                </div>
+                <div class="content_producto">
+                    <div class="img_product text-center">
+                        <img src="../multimedia/moda_one.jpg" alt="img_combo" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Combo Primavera - Glow</h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,01182536</li>
+                        <li><i class='bx bxs-dollar-circle'></i>250,00</li>
+                        <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
                         <li><i class='bx bx-map'></i>Belgrano, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/mineria_two.jpg" alt="img_rig"
+                            class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Rig Minero - 397Mh/s </h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,11825363</li>
+                        <li><i class='bx bxs-dollar-circle'></i>2,500</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product text-center">
-                    <img src="../multimedia/moda_one.jpg" alt="img_combo" class="rounded mx-auto d-block img-fluid">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/nft_one.jpeg" alt="img_nft" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>KING - Bored Ape Monkey</h5>
+                        <li><i class='bx bxl-bitcoin'></i>14,1930</li>
+                        <li><i class='bx bxs-dollar-circle'></i>300,000</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h5>Combo Primavera - Glow</h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,01182536</li>
-                    <li><i class='bx bxs-dollar-circle'></i>250,00</li>
-                    <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
-                    <li><i class='bx bx-map'></i>Belgrano, CABA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/mineria_two.jpg" alt="img_rig" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>Rig Minero - 397Mh/s </h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,11825363</li>
-                    <li><i class='bx bxs-dollar-circle'></i>2,500</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/nft_one.jpeg" alt="img_nft" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>KING - Bored Ape Monkey</h5>
-                    <li><i class='bx bxl-bitcoin'></i>14,1930</li>
-                    <li><i class='bx bxs-dollar-circle'></i>300,000</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/casa_two.jpg" alt="img_casa2" class="rounded mx-auto d-block img-fluid" style="
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/casa_two.jpg" alt="img_casa2" class="rounded mx-auto d-block img-fluid"
+                            style="
                     width: 200px;">
+                    </div>
+                    <div class="info_product">
+                        <h5>Casa - 4amb, Duplex - 143m2</h5>
+                        <li><i class='bx bxl-bitcoin'></i>9,22334689</li>
+                        <li><i class='bx bxs-dollar-circle'></i>195,000</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i> Martinez, GBA Norte</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h5>Casa - 4amb, Duplex - 143m2</h5>
-                    <li><i class='bx bxl-bitcoin'></i>9,22334689</li>
-                    <li><i class='bx bxs-dollar-circle'></i>195,000</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i> Martinez, GBA Norte</li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/producto_one.jpg" alt="img_reloj"
+                            class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Reloj - Tommy Hilfiger</h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,00709522</li>
+                        <li><i class='bx bxs-dollar-circle'></i>150,00</li>
+                        <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
+                        <li><i class='bx bx-map'></i>Palermo, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/mineria_one.jpg" alt="img_rig2"
+                            class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>RIG MINERIA - 280 MH/s </h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,19400019</li>
+                        <li><i class='bx bxs-dollar-circle'></i>4,100</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/producto_one.jpg" alt="img_reloj" class="rounded mx-auto d-block img-fluid">
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/moda_two.jpg" alt="img_combo2"
+                            class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Combo Vestin - Glow</h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,00875077</li>
+                        <li><i class='bx bxs-dollar-circle'></i>185,00</li>
+                        <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
+                        <li><i class='bx bx-map'></i>Palermo, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="info_product">
-                    <h5>Reloj - Tommy Hilfiger</h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,00709522</li>
-                    <li><i class='bx bxs-dollar-circle'></i>150,00</li>
-                    <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
-                    <li><i class='bx bx-map'></i>Palermo, CABA</li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/nft_two.jpeg" alt="img_nft2" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>Chicle - Bored Ape Monkey</h5>
+                        <li><i class='bx bxl-bitcoin'></i>16,5375</li>
+                        <li><i class='bx bxs-dollar-circle'></i>350,000</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/mineria_one.jpg" alt="img_rig2" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>RIG MINERIA - 280 MH/s </h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,19400019</li>
-                    <li><i class='bx bxs-dollar-circle'></i>4,100</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/moda_two.jpg" alt="img_combo2" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>Combo Vestin - Glow</h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,00875077</li>
-                    <li><i class='bx bxs-dollar-circle'></i>185,00</li>
-                    <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
-                    <li><i class='bx bx-map'></i>Palermo, CABA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/nft_two.jpeg" alt="img_nft2" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>Chicle - Bored Ape Monkey</h5>
-                    <li><i class='bx bxl-bitcoin'></i>16,5375</li>
-                    <li><i class='bx bxs-dollar-circle'></i>350,000</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Crypto Valley, SMA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/auto_one.jpg" alt="img_auto2" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product">
-                    <h5>BMW - 120I - 2016 </h5>
-                    <li><i class='bx bxl-bitcoin'></i>1,41733</li>
-                    <li><i class='bx bxs-dollar-circle'></i>29,990</li>
-                    <li><i class='bx bx-check-shield'></i>Smart Contract</li>
-                    <li><i class='bx bx-map'></i>Puerto Madero, CABA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/auto_one.jpg" alt="img_auto2" class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product">
+                        <h5>BMW - 120I - 2016 </h5>
+                        <li><i class='bx bxl-bitcoin'></i>1,41733</li>
+                        <li><i class='bx bxs-dollar-circle'></i>29,990</li>
+                        <li><i class='bx bx-check-shield'></i>Smart Contract</li>
+                        <li><i class='bx bx-map'></i>Puerto Madero, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
 
+                    </div>
+                </div>
+                <div class="content_producto">
+                    <div class="img_product">
+                        <img src="../multimedia/producto_two.jpg" alt="img_gafas"
+                            class="rounded mx-auto d-block img-fluid">
+                    </div>
+                    <div class="info_product mt-2">
+                        <h5>Gafas - Sol y Mar</h5>
+                        <li><i class='bx bxl-bitcoin'></i>0,003687</li>
+                        <li><i class='bx bxs-dollar-circle'></i>78,00</li>
+                        <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
+                        <li><i class='bx bx-map'></i>Palermo, CABA</li>
+                    </div>
+                    <div class="container_comprar">
+                        <li><a href="./login.html"><i class='bx bx-cart-download'></i></a></li>
+                    </div>
                 </div>
             </div>
-            <div class="content_producto">
-                <div class="img_product">
-                    <img src="../multimedia/producto_two.jpg" alt="img_gafas" class="rounded mx-auto d-block img-fluid">
-                </div>
-                <div class="info_product mt-2">
-                    <h5>Gafas - Sol y Mar</h5>
-                    <li><i class='bx bxl-bitcoin'></i>0,003687</li>
-                    <li><i class='bx bxs-dollar-circle'></i>78,00</li>
-                    <li><i class='bx bx-user-check'></i>Directo con vendedor@</li>
-                    <li><i class='bx bx-map'></i>Palermo, CABA</li>
-                </div>
-                <div class="container_comprar">
-                    <li><a href="./login.html"><i class='bx bx-cart-download' ></i></a></li>
-                </div>
-            </div>
-        </div>
         </div>
         </div>
     </section>
