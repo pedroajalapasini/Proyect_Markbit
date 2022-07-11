@@ -316,7 +316,7 @@ section .container_ofertas .content_ofertas li {
     width: 50%;
   }
 }
-.content_promo h1 {
+.content_promo h2 {
   text-align: center;
   margin-top: 10px;
   padding-top: 10px;
