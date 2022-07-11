@@ -1,0 +1,40 @@
+//* Mixins *//
+
+@mixin formularios ($content) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: $content;
+    align-items: center;
+    align-content: center;
+};
+
+@mixin contentForm ($items){
+    display: flex;
+    flex-direction: column;
+    align-items: $items;
+    
+};
+
+@mixin register-disp ($display, $direction, $items, $jContent) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $items;
+    justify-content: $jContent;
+    
+}
+
+@mixin btn-contact {
+    padding: map-get($btn_mobile, pdn);
+        margin: map-get($btn_mobile, mgn);
+        border-radius: map-get($botones, bd-radio);
+        border: map-get($botones , bd);
+        background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
+};
+
+@mixin bt-hover{
+    &:hover {
+        background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+        transition: 0.3s;
+        color: white
+    }
+};

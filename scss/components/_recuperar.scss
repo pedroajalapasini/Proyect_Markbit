@@ -1,0 +1,37 @@
+/* Recuperar */
+.container_register {
+    font-family: $font-pag;
+    @include register-disp (flex, column, center, center);
+
+    h2 {
+        text-decoration: map-get($dec-titles , decoration);
+        font-size: map-get($fonts , font3);
+        @extend %titulos;
+    }
+    form {
+        .btn_filter {
+            margin-top: map-get($btn_mobile, mgn );
+            @include formularios (space-evenly);
+
+            .btn-contact {
+                @include btn-contact;
+                @include bt-hover;
+            }
+        }
+        .btn_form{
+            @include formularios (space-evenly);
+            li{
+                list-style: none;
+                margin-top: map-get($btn_mobile, mgn );
+
+                a{
+                    text-decoration: map-get($dec-titles , text-d );
+                    color: map-get($colores, comprar );
+                    padding: map-get($btn_mobile , pdn );
+                    border-radius: map-get($botones, bd-radio );
+                    @include bt-hover;
+                }
+            }
+        }
+    }
+}

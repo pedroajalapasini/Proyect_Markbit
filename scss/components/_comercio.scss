@@ -1,6 +1,10 @@
+
+
 /* COMERCIO */
 
+
 .filter_comercio {
+    font-family: $font-pag;
     margin: 5px;
 
     @media only screen and (min-width:620px) {
@@ -34,21 +38,25 @@
 }
 
 .container_filter_mobile {
+    font-family: $font-pag;
 
     .btn_filter_mobile{
-        padding: 5px;
-        margin: 5px;
-        border-radius: 20px;
+        padding-top: map-get($btn_mobile, pdn ) ;
+        margin: map-get($btn_mobile , mgn );
+        border-radius: map-get($botones , bd-radio );
+        border: map-get($botones , bd );
+
         background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
         i{
             text-align: center;
+            font-size: 20pt;
         }
     }
 
     .btn_filter-canvas {
-        padding: 8px;
-        margin: 5px;
-        border-radius: 20px;
+        padding: map-get($btn_mobile, pdn );
+        margin: map-get($btn_mobile, mgn );
+        border-radius: map-get($botones, bd-radio );
         background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
         color: white;
         display: flex;
@@ -68,6 +76,7 @@
 }
 
 .container_market {
+    font-family: $font-pag;
     display: grid;
     grid-template-rows: repeat(3, 260px);
     grid-template-columns: repeat(2, 1fr);

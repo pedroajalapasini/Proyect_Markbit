@@ -1,242 +1,150 @@
-/* PRODUCTOS */
+/* PRODUCTOS*/
 
-.header_canvas {
-    background-color: #9716f93e;
+.desktop_productos {
 
-    h5 {
-        font-weight: 900;
-        font-size: 15pt;
-    }
-}
-
-.offcanvas-body {
-    h6 {
-        font-size: 13pt;
-        font-weight: 900;
-    }
-
-    .input_filter {
-        width: 100%;
-        height: 80%;
-    }
-}
-
-/* filter-productos-desktop */
-.filter_productos-desktop {
-
-    @media only screen and (max-width: 590px) {
-        display: none;
-    }
-
-    @media only screen and (min-width: 700px) {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .content_filter-desktop {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
-        margin: 5px;
-        align-items: baseline;
-
-
-        input,
-        label {
-            height: 25px;
-            border: none;
-            border-radius: 10px;
-            border-bottom: #942ff3 solid 1px;
-            margin-top: 2px;
-        }
+    .filter_productos-desktop {
+        width: 200px;
+        height: 800px;
+        margin: 6px;
 
         h4 {
-            font-size: 20pt;
+            text-align: center;
+            text-decoration: underline;
         }
 
-        h6 {
-            font-size: 14pt;
+        /* ---------------Medias------------------*/
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
 
+        @media only screen and (max-width: 880px) {
+            height: 600px;
+        }
+
+        @media only screen and (min-width: 1020px) {
+            width: 250px;
+            height: 600px;
+        }
+
+        .content_filter-desktop {
+            margin: 6px;
+
+            @media only screen and (max-width: 880px) {
+                margin: 2px;
+            }
         }
 
         .input_filter {
-            border: none;
-            border-radius: 10px;
-            border-bottom: #942ff3 solid 1px;
-            margin-top: 2px;
+            width: 170px;
         }
-    }
-
-    .content_filter-desktop-sc {
-        display: flex;
-        align-items: center;
-        margin: 5px;
-    }
-
-    .content_filter-desktop-check,
-    .content_filter-desktop-cond {
-        margin: 5px;
-
-        h6 {
-            font-size: 14pt;
-
-        }
-    }
-
-    .btn-desktop {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
 
         .btn_filter-desktop {
-            padding: 8px;
-            margin: 5px;
-            border-radius: 20px;
-            background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
-            color: white;
+            padding: map-get($botones, pdn);
+            margin: map-get($botones, mgn);
+            border-radius: map-get($botones, bd-radio);
+            border: map-get($botones , bd);
+            background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 200px;
+            width: 50%;
+
+            &:hover {
+                background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+                transition: 0.2s;
+            }
+
+            &:active {
+                padding: 3px;
+                transition: 0.2s;
+            }
         }
-    }
-}
 
-/*productos-Mobile-Desktop*/
+        .btn_filter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
 
-.container_producto {
+        }
 
-    @media only screen and (min-width: 390px) {
-        justify-content: space-evenly;
-    }
-
-    @media only screen and (min-width: 700px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
-    @media only screen and (min-width: 1000px) {
-        justify-content: space-evenly;
+    .container_producto {
+        width: 800px;
+
+
+        /* ---------------Medias------------------*/
+
+        @media only screen and (min-width: 500px) {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            width: 450px;
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 780px;
+        }
     }
 
 
     .content_producto {
-        width: 300px;
-        flex-wrap: nowrap;
-        align-items: center;
+        display: flex;
         flex-direction: column;
-        align-content: stretch;
-        justify-content: center;
-        position: relative;
-        opacity: 1;
-
-        @media only screen and (min-width: 390px) {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        @media only screen and (min-width: 800px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .img_product {
-            width: 270px;
-            opacity: 1;
-            display: block;
-            transition: .6s ease;
-            backface-visibility: hidden;
-            &:hover {
-                transition: .6s ease;
-                opacity: 0.45;
-
-            }
-
-            @media only screen and (min-width: 600px) {
-                width: 270px;
-            }
-
-            @media only screen and (min-width: 800px) {
-                width: 300px;
-            }
-
-        }
+        margin: 15px;
 
         .info_product {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: stretch;
-            margin: 5px;
-            padding: 10px;
+            position: relative;
+
+            h5 {
+                @extend %titulos;
+                font-weight: 900;
+                font-size: map-get($fonts , font3 );
+                margin-top: map-get($btn_mobile , mg );
+
+                @media only screen and (max-width: 425px) {
+                    font-size: 15pt;
+                }
+            }
 
             li {
                 list-style: none;
                 display: flex;
-                justify-content: flex-start;
-                align-content: center;
-                flex-direction: row;
-                flex-wrap: nowrap;
                 align-items: center;
-            }
-            h5{
-                font-weight: 800;
-                font-style: bold;
-                border-bottom: 1px solid black;
             }
         }
 
         .container_comprar {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-            opacity: 0;
             position: absolute;
-            top: 75%;
-            left: 35%;
-            animation: AnimInfo_product 5s ease 0s 1 normal forwards;
-
-
-
-            @keyframes AnimInfo_product {
-                0% {
-                    opacity: 0;
-                    transform: rotateX(70deg);
-                    transform-origin: top;
-                }
-            
-                100% {
-                    opacity: 1;
-                    transform: rotateX(0deg);
-                    transform-origin: top;
-                }
-            }
-
-            &:hover {
-                opacity: 1;
-            }
 
             li {
                 list-style: none;
-                padding: 5px;
-                border-radius: 20px;
-                background: linear-gradient(20deg, #32a8e8, #7c15ca, #942ff3);
-                a{
+                background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
+                width: 40px;
+                border-radius: 40px;
+                margin-top: 5px;
+                margin-left: 5px;
                 text-align: center;
-                text-decoration: none;
+
+                &:hover {
+                    transition: 0.5s;
+                    background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+                }
+
+                a {
+                    i {
+                        margin-top: map-get($btn_mobile , mgn);
+                        font-size: 25pt;
+
+                        &:hover {
+                            color: map-get($colores , generic );
+                            transition: 0.8s;
+                        }
+                    }
+
                 }
             }
         }
