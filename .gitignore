@@ -5,7 +5,7 @@
 node_modules
 
 # Ignora todos los archivos de texto
-*.txt
+.txt
 
 # Ignora archivos de configuración SASS
 .sass-cache
