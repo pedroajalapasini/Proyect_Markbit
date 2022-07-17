@@ -1,0 +1,13 @@
+/*Ayuda*/
+main {
+    margin-top: 2vh;
+    font-family: $font-pag;
+
+    .list-group {
+        margin-right: 2vh;
+    }
+    .list-group-item-action{
+        background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
+        color: white;
+    }
+}
