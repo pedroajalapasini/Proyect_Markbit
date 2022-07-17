@@ -83,7 +83,7 @@
 }
 
 /* EXTENDS */
-.container_register h2, .container_contacto h2, .desktop_productos .content_producto .info_product h5, section .title_publicar h2 {
+.container_info_nosotros p, main .content_nosotros p, .container_register h2, .container_contacto h2, .desktop_productos .content_producto .info_product h5, section .title_publicar h2 {
   text-align: center;
   padding-top: 5px;
 }
@@ -941,6 +941,87 @@ footer .creditos {
 .container_register form .btn_form li a:hover {
   background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
   transition: 0.3s;
+  color: white;
+}
+
+/* NOSOTROS */
+main {
+  font-family: "Nunito Sans", sans-serif;
+}
+main h2 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: 900;
+}
+main .container_nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 400px);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5px;
+  align-items: center;
+}
+main .content_nosotros {
+  margin: 5px;
+  border-radius: 30PX;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .content_nosotros:hover {
+  background: linear-gradient(250deg, #32a8e8, #7c15ca, #942ff3);
+  transition: 0.3s;
+  color: white;
+}
+main .img_nosotros {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-top: 5px;
+}
+
+.container_info_nosotros {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30PX;
+}
+.container_info_nosotros h2 {
+  font-size: 25pt;
+}
+/*Ayuda*/
+main {
+  margin-top: 2vh;
+  font-family: "Nunito Sans", sans-serif;
+}
+main .list-group {
+  margin-right: 2vh;
+}
+main .list-group-item-action {
+  background: linear-gradient(0deg, rgba(50, 168, 232, 0.4941176471), rgba(124, 21, 202, 0.5843137255), rgba(148, 47, 243, 0.6392156863));
+  color: white;
+}
+
+/* TyC */
+main #navbar-example2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #navbar-example2 .nav-item .active {
+  background: linear-gradient(0deg, rgba(50, 168, 232, 0.4941176471), rgba(124, 21, 202, 0.5843137255), rgba(148, 47, 243, 0.6392156863));
   color: white;
 }
 

@@ -1,0 +1,13 @@
+/* TyC */
+main {
+    #navbar-example2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .nav-item .active{
+            background: linear-gradient(0deg, #32a8e87e, #7c15ca95, #942ff3a3);
+            color: white;
+        }
+    }
+    
+}
